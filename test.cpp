@@ -101,7 +101,7 @@ TEST_CASE("Special Functions work")
 
     SECTION("relase works")
     {
-        up1.release();
+        delete up1.release();
         REQUIRE(up1.get() == nullptr);  
     }
 
